@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Theater</title>
+  </head>
+  <body>
+    <div class = "container">
+      <form id = "mainform">
+        <div class="theater">
+          <div class="radio">
+            <h2>
+              What movie are you wanting to see?
+            </h2>
+            <label>
+              <input type="radio" name="movie" value="1" checked>
+              The Avengers
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="2">
+              Toy Story
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="3">
+              Guardians of the Galaxy
+            </label>
+          </div>
+          <h4>
+            What time is your movie showing?
+          </h4>
+          <select class="form-control" id="times">
+            <option value = "1">01:00 PM</option>
+            <option value = "2">05:00 PM</option>
+            <option value = "3">07:00 PM</option>
+            <option value = "4">10:00 PM</option>
+          </select>
+          <div class="form-group">
+            <label for="age">What is your age?</label>
+            <input type="text" class="form-control" id = "age">
+          </div>
+        </div>
+        <button type = "submit">Submit</button>
+      </form>
+      <div id="show-tickt">
+      </div>
+    </div>
+  </body>
+</html>
